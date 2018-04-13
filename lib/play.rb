@@ -37,5 +37,10 @@ end
 
 # Define your play method below
 def play(board)
-
+loop do 
+  turn(board)
+  if position_taken?(board, 0) && position_taken?(board,1) && position_taken?(board, 2) && position_taken?(board,3) && position_taken?(board,4) && position_taken?(board,5) && position_taken?(board,6) & &position_taken?(board,7) && position_taken?(board,8)
+    break
+  end
+end
 end
